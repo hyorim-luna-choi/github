@@ -1,0 +1,73 @@
+
+.background-wrap {
+    position: relative;
+    display: grid;
+    height: 100%;
+
+}
+
+.background {
+    width: 100%;
+    position: relative;
+    max-height: 600px;
+    margin-right: 0;
+}
+
+.header-logo {
+    z-index: 200;
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.header-avatar {
+    z-index: 100;
+    width: 20%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.header-middle {
+    background-image: url(../assets/maskgirl.jpeg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 8px;
+}
+
+.video-info {
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.video-title {
+    font-size: 400%;
+    color: yellow;
+    font-style: oblique;
+    font-weight: bold;
+}
+.Play, .My-list {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 10px;
+    width: 100px;
+    height: 20px;
+    padding: 2px, 2px, 2px, 2px;
+}
+.video-status {
+    width: 400px;
+    margin-top: 10px;
+    color: lightyellow;
+    font-style: oblique;
+    font-size: 90%;
+}
