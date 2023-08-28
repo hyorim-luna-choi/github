@@ -26,33 +26,34 @@
     width: 20%;
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 20px;
 }
 
 .header-middle {
     background-image: url(../assets/maskgirl.jpeg);
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    /* position: absolute; */
+    /* height: auto; */
+    /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 8px;
+    object-fit: contain;
+    /* margin: 300px, auto, 8px, 50px; */
 }
 
-.video-info {
-    margin-top: 300px;
-    margin-left: 50px;
+.movie-info {
+    margin: 300px auto auto 30px;
 }
-.video-title {
+.movie-title {
     font-size: 400%;
     color: yellow;
     font-style: oblique;
     font-weight: bold;
+    margin-bottom: 10px;
+
 }
 .Play, .My-list {
     background-color: black;
-    opacity: 0.5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -64,10 +65,27 @@
     height: 20px;
     padding: 2px, 2px, 2px, 2px;
 }
-.video-status {
+
+
+.Play:hover, .My-list:hover {
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+.movie-des {
     width: 400px;
-    margin-top: 10px;
+    margin-top: 20px;
     color: lightyellow;
     font-style: oblique;
     font-size: 90%;
+}
+
+.header-bottom{
+    position: absolute;
+    margin-top: 520px;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(180deg, transparent, rgba(29, 30, 27, 0.749), black);
 }
