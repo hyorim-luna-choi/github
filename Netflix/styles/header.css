@@ -3,46 +3,39 @@
     position: relative;
     display: grid;
     height: 100%;
-
 }
 
-.background {
+.header-top {
     width: 100%;
-    position: relative;
-    max-height: 600px;
-    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
 }
+/* flex를 걸어서 space-between을 하려면 얘네만을 위한 모그룹 필요 */
+/* display: flex는 모그룹에만 걸어주면 돼*/
 
 .header-logo {
-    z-index: 200;
-    width: 30%;
-    position: absolute;
-    top: 10px;
-    left: 15px;
+    width: 10%;
+    height: 10%;
 }
 
 .header-avatar {
-    z-index: 100;
-    width: 20%;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    width: 4%;
+    margin-right: 30px;
 }
 
 .header-middle {
     background-image: url(../assets/maskgirl.jpeg);
-    /* position: absolute; */
-    /* height: auto; */
-    /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    object-fit: contain;
-    /* margin: 300px, auto, 8px, 50px; */
 }
+/* url로 이미지 채우기 */
+
 
 .movie-info {
-    margin: 300px auto auto 30px;
+    margin: 250px auto auto 30px;
+
 }
 .movie-title {
     font-size: 400%;
@@ -62,7 +55,7 @@
     font-size: 15px;
     margin-left: 10px;
     width: 100px;
-    height: 20px;
+    height: 25px;
     padding: 2px, 2px, 2px, 2px;
 }
 
@@ -71,15 +64,15 @@
     opacity: 0.7;
     background-color: white;
     color: black;
-    transition: all 0.5s;
+    transition: 0.5s;
 }
 
 .movie-des {
-    width: 400px;
+    width: 350px;
     margin-top: 20px;
     color: lightyellow;
     font-style: oblique;
-    font-size: 90%;
+    font-size: 15px;
 }
 
 .header-bottom{
@@ -89,3 +82,4 @@
     height: 70px;
     background-image: linear-gradient(180deg, transparent, rgba(29, 30, 27, 0.749), black);
 }
+/* 그라데이션 넣기 */

@@ -19,13 +19,15 @@
     column-gap: 10px;
     height: 250px;
 }
+/* scroll 만들기 */
 
-.contents::-webkit-scrollbar{
+.contents::-webkit-scrollbar{   
     display: none;
 }
+/* Scrollbar 없애기 */
 
 .movie {
-    transition: all 0.3s;
+    transition: 0.3s;
     margin-top: 10px;
     width: 100%;
     height: 195px;
@@ -35,6 +37,4 @@
 .movie:hover {
     cursor: pointer;
     transform: scale(1.1)
-    
-    
 }
